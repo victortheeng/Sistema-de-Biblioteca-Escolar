@@ -1,0 +1,1 @@
+document.querySelectorAll('input[type="number"]').forEach(input=>input.addEventListener('input',()=>{if(input.value!==''&&Number(input.value)<0)input.setCustomValidity('Informe zero ou um número positivo.');else input.setCustomValidity('');}));
